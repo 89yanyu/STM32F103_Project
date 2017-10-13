@@ -1,40 +1,40 @@
-###±¾ÏîÄ¿¼¯ºÏÁËËùÓÐ»ùÓÚSTM32F103µÄ¹¤³Ì
-+ ËùÓÐ¹¤³Ì»ùÓÚSTM32F1±ê×¼¿âºÍ×Ô¼º¿ª·¢µÄÒ»Ð©¿â
+### æœ¬é¡¹ç›®é›†åˆäº†æ‰€æœ‰åŸºäºŽSTM32F103çš„å·¥ç¨‹
++ æ‰€æœ‰å·¥ç¨‹åŸºäºŽSTM32F1æ ‡å‡†åº“å’Œè‡ªå·±å¼€å‘çš„ä¸€äº›åº“
 
-###ÏîÄ¿µÄÄ¿Â¼Ê÷
-    ©À©¤CORE (CortexÏà¹Ø)
-    ©À©¤FWLIB (STM32±ê×¼¿â)
-    ©¦  ©À©¤inc
-    ©¦  ©¸©¤src
-    ©À©¤MYLIB (×Ô¼º¿ª·¢µÄ¿â)
-    ©À©¤OBJ (Éú³ÉµÄÄ¿±êÎÄ¼þ)
-    ©¸©¤USER (¸ÃÏîÄ¿ÌØÓÐ´úÂë)
+### é¡¹ç›®çš„ç›®å½•æ ‘
+    â”œâ”€CORE (Cortexç›¸å…³)
+    â”œâ”€FWLIB (STM32æ ‡å‡†åº“)
+    â”‚  â”œâ”€inc
+    â”‚  â””â”€src
+    â”œâ”€MYLIB (è‡ªå·±å¼€å‘çš„åº“)
+    â”œâ”€OBJ (ç”Ÿæˆçš„ç›®æ ‡æ–‡ä»¶)
+    â””â”€USER (è¯¥é¡¹ç›®ç‰¹æœ‰ä»£ç )
  
-###ÏîÄ¿¹¦ÄÜ
-+ BluetoothTest£ºË«ÂÖÐ¡³µÏîÄ¿
-+ MC£ºPIDµç»ú¿ØÖÆ
-+ ÆäËû»ù±¾¶¼ÊÇÓÃÓÚ²âÊÔ»òÕßµ¥¶ÀÄ£¿é¿ª·¢
-+ TemplateÎªÄ£°åÏîÄ¿£¬°üº¬ËùÓÐ¿âÒÔ¼°Ä¬ÈÏ¹¤³ÌÎÄ¼þ
+### é¡¹ç›®åŠŸèƒ½
++ BluetoothTestï¼šåŒè½®å°è½¦é¡¹ç›®
++ MCï¼šPIDç”µæœºæŽ§åˆ¶
++ å…¶ä»–åŸºæœ¬éƒ½æ˜¯ç”¨äºŽæµ‹è¯•æˆ–è€…å•ç‹¬æ¨¡å—å¼€å‘
++ Templateä¸ºæ¨¡æ¿é¡¹ç›®ï¼ŒåŒ…å«æ‰€æœ‰åº“ä»¥åŠé»˜è®¤å·¥ç¨‹æ–‡ä»¶
     
-######ÒòÎªÊÇ¸öÈË´úÂë£¬ËùÒÔ¼¸ºõÃ»ÓÐ×¢ÊÍ¡£µ«ÊÇ£¬
-###BluetoothTestÖÐËùÓÐ´úÂë¾ùÓÐ×¢ÊÍ
+###### å› ä¸ºæ˜¯ä¸ªäººä»£ç ï¼Œæ‰€ä»¥å‡ ä¹Žæ²¡æœ‰æ³¨é‡Šã€‚ä½†æ˜¯ï¼Œ
+### BluetoothTestä¸­æ‰€æœ‰ä»£ç å‡æœ‰æ³¨é‡Š
 
-###³ýMC¼°ÆäÏà¹ØÏîÄ¿£¬ÆäËûÏîÄ¿µÄ¹Ü½Å·ÖÅä¾ù»ùÓÚÕýµãÔ­×ÓÕ½½¢V3¿ª·¢°å
-##ÓÉÓÚÊ±¼ä¾ÃÔ¶£¬²¢²»ÄÜ±£Ö¤ËùÓÐ´úÂëµÄÕýÈ·ÐÔ¡£
+### é™¤MCåŠå…¶ç›¸å…³é¡¹ç›®ï¼Œå…¶ä»–é¡¹ç›®çš„ç®¡è„šåˆ†é…å‡åŸºäºŽæ­£ç‚¹åŽŸå­æˆ˜èˆ°V3å¼€å‘æ¿
+## ç”±äºŽæ—¶é—´ä¹…è¿œï¼Œå¹¶ä¸èƒ½ä¿è¯æ‰€æœ‰ä»£ç çš„æ­£ç¡®æ€§ã€‚
 
-###Ö÷Òª×Ô¼º¿ª·¢µÄ¿â
-+ beep£º¿ØÖÆÏìÁå
-+ delay£ºÀûÓÃSysTickµÄ¾«È·ÑÓÊ±ºÍÑ­»·Ä£ÄâµÄÑÓÊ±£¨·ÂÕÕÕýµãÔ­×Ó£©
-+ encoder£º±àÂëÆ÷£¨Ë«ÂÖÐ¡³µÏîÄ¿ÖÐ¸ÄÎª×óÓÒÁ½¸öÎÄ¼þ£©
-+ exinterrupt£ºÍâ²¿ÖÐ¶Ï
-+ i2c£ºI2CÐ­Òé£¨Ö÷ÒªÓÃÓÚMPU6050Í¨Ñ¶£©
-+ key£º°´¼üÏìÓ¦£¬°üÀ¨°´¼üÖÐ¶Ï
-+ led£ºLEDµÆ
-+ mpu6050£º6ÖáÔË¶¯´¦Àí×é¼þ
-+ pwm£ºÀûÓÃ¶¨Ê±Æ÷µÄPWMÄ£Ê½Éú³ÉPWM²¨
-+ timer£º¶¨Ê±Æ÷¼°ÆäÖÐ¶Ï
-+ usart£ºUSB´®¿Ú£¨USART1£©£¬Ò»°ãÓÃÓÚ´òÓ¡µ÷ÊÔÐÅÏ¢£¬»ò¶ÁÈ¡À´×ÔÉÏÎ»»úµÄ¿É¼ûÄÚÈÝ
-+ wifi£º´®¿Ú×ªwifi£¨USART2£©£¬ÓëwifiÄ£¿é£¨ESP8266£©Í¨ÐÅ£¬²ÉÓÃATÖ¸Áî£¬Ö§³Ö³¬Ê±·µ»Ø
-+ bluetooth£º´®¿Ú×ªÀ¶ÑÀ£¨USART3£©£¬Í¨¹ýÀ¶ÑÀÓëÉÏÎ»»úÍ¨Ñ¶£¬²ÉÓÃ×Ô¶¨ÒåµÄÍ¨Ñ¶Ð­Òé£¬ÒÔ±£Ö¤Êý¾ÝµÄÕýÈ·ÐÔ£¬ÍêÕûÐÔ¡£²»Ö§³ÖÍ¬Ê±´æ´¢¶àÌõÊý¾Ý
+### ä¸»è¦è‡ªå·±å¼€å‘çš„åº“
++ beepï¼šæŽ§åˆ¶å“é“ƒ
++ delayï¼šåˆ©ç”¨SysTickçš„ç²¾ç¡®å»¶æ—¶å’Œå¾ªçŽ¯æ¨¡æ‹Ÿçš„å»¶æ—¶ï¼ˆä»¿ç…§æ­£ç‚¹åŽŸå­ï¼‰
++ encoderï¼šç¼–ç å™¨ï¼ˆåŒè½®å°è½¦é¡¹ç›®ä¸­æ”¹ä¸ºå·¦å³ä¸¤ä¸ªæ–‡ä»¶ï¼‰
++ exinterruptï¼šå¤–éƒ¨ä¸­æ–­
++ i2cï¼šI2Cåè®®ï¼ˆä¸»è¦ç”¨äºŽMPU6050é€šè®¯ï¼‰
++ keyï¼šæŒ‰é”®å“åº”ï¼ŒåŒ…æ‹¬æŒ‰é”®ä¸­æ–­
++ ledï¼šLEDç¯
++ mpu6050ï¼š6è½´è¿åŠ¨å¤„ç†ç»„ä»¶
++ pwmï¼šåˆ©ç”¨å®šæ—¶å™¨çš„PWMæ¨¡å¼ç”ŸæˆPWMæ³¢
++ timerï¼šå®šæ—¶å™¨åŠå…¶ä¸­æ–­
++ usartï¼šUSBä¸²å£ï¼ˆUSART1ï¼‰ï¼Œä¸€èˆ¬ç”¨äºŽæ‰“å°è°ƒè¯•ä¿¡æ¯ï¼Œæˆ–è¯»å–æ¥è‡ªä¸Šä½æœºçš„å¯è§å†…å®¹
++ wifiï¼šä¸²å£è½¬wifiï¼ˆUSART2ï¼‰ï¼Œä¸Žwifiæ¨¡å—ï¼ˆESP8266ï¼‰é€šä¿¡ï¼Œé‡‡ç”¨ATæŒ‡ä»¤ï¼Œæ”¯æŒè¶…æ—¶è¿”å›ž
++ bluetoothï¼šä¸²å£è½¬è“ç‰™ï¼ˆUSART3ï¼‰ï¼Œé€šè¿‡è“ç‰™ä¸Žä¸Šä½æœºé€šè®¯ï¼Œé‡‡ç”¨è‡ªå®šä¹‰çš„é€šè®¯åè®®ï¼Œä»¥ä¿è¯æ•°æ®çš„æ­£ç¡®æ€§ï¼Œå®Œæ•´æ€§ã€‚ä¸æ”¯æŒåŒæ—¶å­˜å‚¨å¤šæ¡æ•°æ®
 
-ÈçÓÐÎÊÌâ»ò½¨Òé¿ÉÁªÏµ 995239101(Äã¶®µÃ)qq.com
+### å¦‚æœ‰é—®é¢˜æˆ–å»ºè®®å¯è”ç³» 995239101(ä½ æ‡‚å¾—)qq.com
