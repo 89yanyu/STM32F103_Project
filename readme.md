@@ -11,8 +11,8 @@
     └─USER (该项目特有代码)
  
 ### 项目功能
-+ BluetoothTest：双轮小车项目
-+ MC：PID电机控制
++ BluetoothTest：双轮小车项目（[上位机代码](https://github.com/89yanyu/Qt_Project/tree/master/MC)）
++ MC：PID电机控制（[上位机代码](https://github.com/89yanyu/Qt_Project/tree/master/MC)）
 + 其他基本都是用于测试或者单独模块开发
 + Template为模板项目，包含所有库以及默认工程文件
     
