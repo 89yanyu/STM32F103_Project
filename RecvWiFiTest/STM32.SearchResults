@@ -1,0 +1,3 @@
+---- WiFi_ProcOneChar Matches (2 in 0 files) ----
+wifi.c (MYLIB):void WiFi_ProcOneChar(char nowchr)
+wifi.c (MYLIB):        WiFi_ProcOneChar(USART_ReceiveData(USART3));
